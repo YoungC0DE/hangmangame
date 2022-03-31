@@ -14,21 +14,20 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.1);
     height: 100vh;
 }
 
 #image {
     height: 200px;
     width: 200px;
-    background-image: url(../images/forca0.png);
+    background-image: url(../images/forca6.png);
     background-size: cover;
     transition: 500ms;
 }
 
 #keyword {
     margin-bottom: 2%;
-    font-size: 36pt;
+    font-size: 300%;
     color: white;
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -52,7 +51,7 @@ body {
 #keyboard .btKey {
     text-align: center;
     margin: 4px;
-    font-size: 18pt;
+    font-size: 16pt;
     color: rgb(0, 0, 0);
     height: 40px;
     width: 40px;
@@ -66,7 +65,7 @@ body {
 #keyboard .btKey:hover {
     position: relative;
     box-shadow: none;
-    font-size: 16pt;
+    font-size: 13pt;
     box-shadow: none;
     top: 2px;
 }
