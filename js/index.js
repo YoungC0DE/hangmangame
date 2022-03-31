@@ -20,20 +20,28 @@ const secretWords = [
 
 const errors = 0 // Armazena erros para atualizar a imagem da forca.
 
-// Função para gerar número aleatório.
+// Gera número aleatório.
 const getRnd = (min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// Função para definir valores inicias
-const initialValues = () => {
-    const rnd = getRnd(0, secretWords.length)
-    keyword.textContent = secretWords[rnd][0]
+// Definindo valores iniciais.
+const rnd        = getRnd(0, secretWords.length),
+      sortedTip  = secretWords[rnd][1],
+      sortedWord = secretWords[rnd][0]
+
+tip.innerHTML += sortedTip
+keyword.innerHTML = "⎽".repeat(sortedWord.length)
+
+
+// Varrendo palavra secreta e setando letras encontradas
+const showWord = () => {
+    // sortedWord.length
 }
 
-// Função que atribui evento em cada botão dentro da variavel 'buttons'
+// Atribuindo evento em cada botão dentro da variavel 'buttons'
 buttons.forEach(button => button.addEventListener("click", () => {
     // for (let cont = 0; cont < secretWords.length; cont++) {
     //     if (secretWords[cont][0].includes(button.textContent)) {
@@ -41,5 +49,3 @@ buttons.forEach(button => button.addEventListener("click", () => {
     //     }
     // }
 }))
-
-//initialValues()
