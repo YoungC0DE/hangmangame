@@ -21,7 +21,7 @@ body {
 #image {
     height: 200px;
     width: 200px;
-    background-image: url(../images/forca6.png);
+    background-image: url(../images/forca0.png);
     background-size: cover;
     transition: 500ms;
 }
@@ -29,11 +29,11 @@ body {
 #keyword {
     display: flex;
     overflow-wrap: anywhere;
-    font-size: 300%;
+    font-size: 250%;
     color: white;
     font-weight: bolder;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 15px;
+    font-family: sans-serif, Arial, Helvetica;
+    letter-spacing: 8px;
     height: 20vh;
     flex-wrap: wrap;
     text-align: center;
@@ -50,7 +50,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 40%;
-
     padding: 5px 20px 5px 20px;
     border-radius: 8px 8px 8px 8px
 }
@@ -67,6 +66,7 @@ body {
     box-shadow: 0px 2px 0px 0px #aaaaaa;
     background-color: white;
     cursor: pointer;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 #keyboard .btKey:hover {
@@ -79,6 +79,13 @@ body {
 
 #keyboard .btKey:active {
     top: 4px;
+}
+
+#tip {
+    font-size: 150%;
+    color: white;
+    font-style: italic;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 @media (max-width: 600px) {
