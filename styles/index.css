@@ -26,12 +26,17 @@ body {
 }
 
 #keyword {
-    margin-bottom: 2%;
+    position: relative;
+    display: flex;
+    overflow-wrap: anywhere;
     font-size: 300%;
     color: white;
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #keyboard {
@@ -44,7 +49,8 @@ body {
     align-items: center;
     height: 150px;
     width: 500px;
-    padding: 0 20px 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 8px 8px 8px 8px;
 }
 
