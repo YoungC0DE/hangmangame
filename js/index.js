@@ -30,11 +30,12 @@ const getRnd = (min, max) => {
 // Definindo valores iniciais.
 const rnd        = getRnd(0, secretWords.length),
       sortedTip  = secretWords[rnd][1],
-      sortedWord = (secretWords[rnd][0]).toUpperCase()
+      sortedWord = (secretWords[rnd][0]).toUpperCase(),
+      hidden     = "⎽".repeat(sortedWord.length)
 
 tip.innerHTML += sortedTip
-keyword.innerHTML = "⎽".repeat(sortedWord.length)
-let cache = keyword.textContent
+keyword.innerHTML = hidden
+let cache;
 
 // Atribuindo evento em cada botão dentro da variavel 'buttons'
 buttons.forEach(button => button.addEventListener("click", () => {
@@ -49,7 +50,8 @@ buttons.forEach(button => button.addEventListener("click", () => {
         // Aplicando as letras encontradas nas posições da palavra sorteada que esta oculta.
         for(let count = 0; count < sortedWord.length; count++){
             if(sortedWord[count] == button.textContent) {
-                console.log(cache[count])
+                keyword.innerHTML = 
+                hidden.replace(hidden.substring(count+1, count+2), button.textContent)
             }
         }
     }
