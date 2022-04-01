@@ -54,7 +54,7 @@ body {
     border-radius: 8px 8px 8px 8px
 }
 
-#keyboard .btKey {
+#keyboard .btKey, .btKeyDesabled {
     text-align: center;
     margin: 4px;
     font-size: 16pt;
@@ -72,13 +72,14 @@ body {
 #keyboard .btKey:hover {
     position: relative;
     box-shadow: none;
-    font-size: 13pt;
     box-shadow: none;
     top: 2px;
 }
 
-#keyboard .btKey:active {
-    top: 4px;
+.btKeyDesabled {
+    box-shadow: none;
+    cursor: default;
+    background-color: rgb(255 255 255 / 25%);
 }
 
 #tip {
