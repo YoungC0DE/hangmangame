@@ -1,10 +1,18 @@
 # Jogo da Forca
 
-Projeto desenvolvido para fins de conhecimento.
-Linguangens utilizadas:
+>
+> Projeto desenvolvido com intuito de me desafiar e 
+> aprender mais coisas com javascript.
+>
 
+Linguangens utilizadas:
 - HTML;
 - CSS;
 - JS
 
-Link para teste: [Jogo da forca](https://youngc0de.github.io/hangmangame/)
+O código está comentado para facilitar a leitura do mesmo.
+Acesse o link para jogar na seção abaixo e se divirta.
+
+## Como jogar?
+
+Link para jogar: [Jogo da forca](https://youngc0de.github.io/hangmangame/)

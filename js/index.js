@@ -10,17 +10,41 @@ const buttons = document.querySelectorAll("#keyboard .btKey"),
     resetGame = document.getElementById("resetGame")
 
 // Lista com palavras secretas e suas respectivas dicas.
+// Formato: palavra secreta + dica.
 const secretWords = [
-    // Formato: palavra secreta + dica.
-    ["lamborguini", "Carro"],
+    // Marcas de carro.
+    ["Ford", "Marca de Carro"],
+    ["Mercedes Benz", "Marca de Carro"],
+    ["volkswagen", "Marca de Carro"],
+    // Atores.
+    ["Will Smith", "Ator"],
+    ["Tom Holland", "Ator"],
+    ["Adam Sandler", "Ator"],
+    // Paises.
     ["Portugal", "País"],
+    ["Noruega", "País"],
+    ["Canada", "País"],
+    // Filmes.
     ["Piratas do Caribe", "Filme"],
-    ["Will Smith", "Ator Famoso"],
+    ["Homem de Ferro", "Filme"],
+    ["Avatar", "Filme"],
+    // Frutas.
     ["Abacaxi", "Fruta"],
+    ["Banana", "Fruta"],
+    ["Morango", "Fruta"],
+    // Profissões.
     ["Programador", "Profissão"],
+    ["Professor", "Profissão"],
+    ["Designer", "Profissão"],
+    // Bebidas.
     ["Cafe", "Bebida"],
+    ["Agua", "Bebida"],
+    ["Vinho", "Bebida"],
+    // Séries.
     ["Peaky Blinders", "Série"],
-    ["Hamster", "Animal"],
+    ["Vikings", "Série"],
+    ["Black Mirror", "Série"],
+    
 ]
 
 let errors = 0, // Armazena erros para atualizar a imagem da forca.
