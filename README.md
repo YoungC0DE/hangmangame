@@ -1,7 +1,8 @@
 # Jogo da Forca
 
-Sendo desenvolvido para fins de conhecimento.
+Projeto desenvolvido para fins de conhecimento.
 Linguangens utilizadas:
+
 - HTML;
 - CSS;
 - JS

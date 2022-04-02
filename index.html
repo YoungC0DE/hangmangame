@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <title>Jogo da Forca</title>
 </head>
+
 <body>
     <div id="container">
         <div id="image"></div>
@@ -29,7 +30,7 @@
             <button class="btKey" id="m">M</button>
             <button class="btKey" id="n">N</button>
             <button class="btKey" id="o">O</button>
-            <button class="btKey" id="p">P</button> 
+            <button class="btKey" id="p">P</button>
             <button class="btKey" id="q">Q</button>
             <button class="btKey" id="r">R</button>
             <button class="btKey" id="s">S</button>
@@ -42,7 +43,16 @@
             <button class="btKey" id="z">Z</button>
         </section>
 
+        <div id="endGame">
+            <div id="DivEndGame">
+                <h1 id="resultGame">Você acertou!</h1>
+                <span id="spanEndGame">A palavra secreta é: </span>
+                <button id="resetGame">Jogar novamente</button>
+            </div>
+        </div>
+
     </div>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
