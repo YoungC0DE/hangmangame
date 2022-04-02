@@ -92,7 +92,9 @@ buttons.forEach(button => button.addEventListener("click", () => {
             // Caso atinga 6 erros, então o jogo acaba.
             if (errors == 6) endGameFunc(0)
         }
-        if (hits == sortedWord.length) endGameFunc(1)
+        // widthHits é usado para saber o tamanho de hits + os espaços representados por "-".
+        let widthHits = hits + cache.filter(x => x === "-").length
+        if (widthHits == sortedWord.length) endGameFunc(1)
         // Quando clicado, o botão é desativado.
         button.className = "btKeyDesabled"
     }
