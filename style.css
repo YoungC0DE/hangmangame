@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../images/fundo.png);
+    background-image: url(images/fundo.png);
     background-size: cover;
 }
 
@@ -21,7 +21,7 @@ body {
 #image {
     height: 200px;
     width: 200px;
-    background-image: url(../images/forca0.png);
+    background-image: url(images/forca0.png);
     background-size: cover;
     transition: 500ms;
 }
